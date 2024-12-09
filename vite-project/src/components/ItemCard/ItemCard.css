@@ -1,0 +1,27 @@
+.card {
+  width: 325px;
+  height: 328px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: #00000099 1px solid;
+  border-radius: 20px;
+}
+
+.card__name {
+  position: absolute;
+  border-radius: 4px;
+  text-align: center;
+  top: 15px;
+  margin: 0;
+  color: #00000099;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 2px 12px;
+}
+
+.card__image {
+  width: 100%;
+  border-radius: 20px;
+}

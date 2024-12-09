@@ -1,0 +1,12 @@
+.page {
+  background-color: #f3f3f3;
+  padding: 0 40px 24px;
+}
+
+.page__content {
+  max-width: 1360px;
+  margin: 0 auto;
+  font-family: "CabinetGrotesk", serif;
+  font-size: 20px;
+  font-weight: 700;
+}

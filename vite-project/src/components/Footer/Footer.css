@@ -1,0 +1,9 @@
+.footer {
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  margin: 171px 2px 0;
+  font-family: "CabinetGrotesk", serif;
+  font-size: 16px;
+  font-weight: 500;
+}

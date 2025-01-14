@@ -6,6 +6,7 @@
   justify-content: center;
   border: #00000099 1px solid;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .card__name {

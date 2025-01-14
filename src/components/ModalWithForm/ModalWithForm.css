@@ -24,6 +24,7 @@
   position: absolute;
   top: 20px;
   right: 28px;
+  cursor: pointer;
 }
 
 .modal__content {

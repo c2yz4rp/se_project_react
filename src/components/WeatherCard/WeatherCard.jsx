@@ -23,7 +23,7 @@ const WeatherCard = ({ weatherData }) => {
   return (
     <section className="weather-card">
       <div className="weather-card__temp">
-        {weatherData.temp[currentTemperatureUnit]} ° {currentTemperatureUnit}
+        {weatherData.temp[currentTemperatureUnit]}°{currentTemperatureUnit}
       </div>
       <img
         src={weatherOption?.url}

@@ -45,14 +45,10 @@ const App = () => {
     setActiveModal("");
   };
 
-  const addButtonClick = () => {
-    setActiveModal("add-garment");
-  };
-
-  const handleAddItemModalSubmit = ({ name, imageUrl, weather }) => {
-    setClothingItems([{ name, link: imageUrl, weather }, ...clothingItems]);
-    closeActiveModal();
-  };
+  //const handleAddItemModalSubmit = ({ name, imageUrl, weather }) => {
+  //  setClothingItems([{ name, link: imageUrl, weather }, ...clothingItems]);
+  //  closeActiveModal();
+  //};
 
   useEffect(() => {
     getWeather(coordinates, APIkey)
@@ -117,7 +113,7 @@ const App = () => {
                 <Profile
                   clothingItems={clothingItems}
                   handleCardClick={handleCardClick}
-                  addButtonClick={addButtonClick}
+                  handleAddClick={handleAddClick}
                 />
               }
             />
@@ -127,7 +123,7 @@ const App = () => {
           isOpen={activeModal === "add-garment"}
           handleCloseClick={closeActiveModal}
           onAddItem={onAddItem}
-          onAddItemModalSubmit={handleAddItemModalSubmit}
+          // onAddItemModalSubmit={handleAddItemModalSubmit}
         />
         <ItemModal
           activeModal={activeModal}

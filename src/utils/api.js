@@ -9,9 +9,7 @@ function request(url, options) {
 }
 
 function getItems() {
-  return fetch(`${baseUrl}/items`).then((res) => {
-    return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
-  });
+  return request(`${baseUrl}/items`);
 }
 
 function addItem(item) {

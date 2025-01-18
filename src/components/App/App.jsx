@@ -23,7 +23,7 @@ const App = () => {
     isDay: false,
   });
   //console.log(weatherData);
-  const [clothingItems, setClothingItems] = useState(defaultClothingItems);
+  const [clothingItems, setClothingItems] = useState([]);
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
   const [currentTemperatureUnit, setCurrentTemperatureUnit] = useState("F");
@@ -62,7 +62,7 @@ const App = () => {
   useEffect(() => {
     getItems()
       .then((data) => {
-        console.log(data);
+        setClothingItems(data);
       })
       .catch(console.error);
   }, []);

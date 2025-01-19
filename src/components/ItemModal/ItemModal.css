@@ -23,6 +23,10 @@
   cursor: pointer;
 }
 
+.modal__close-confirmation {
+  background-size: cover;
+}
+
 .modal__delete-btn {
   position: absolute;
   bottom: 40px;
@@ -58,6 +62,7 @@
 }
 
 .modal__container_confirmation {
+  font-family: "CabinetGrotesk", serif;
   position: relative;
   max-width: 670px;
   height: 280px;
